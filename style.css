@@ -1,0 +1,299 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* IMAGES SETUP */
+.img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.logo-img {
+    height: 40px;
+    display: block;
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-outline {
+    background: white;
+    color: #333;
+    border: none;
+    margin-right: 10px;
+}
+
+.btn-solid {
+    background-color: #2c3e50; /* Berubah jadi Navy */
+    color: white;
+    border: none;
+}
+
+.btn-dark {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.btn-full {
+    width: 100%;
+    text-align: center;
+}
+
+/* HERO BANNERS */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-1 {
+    background-color: #e8e4db; /* Berubah jadi Beige */
+}
+
+.hero-2 {
+    background-color: #3b4d61; /* Berubah jadi Muted Blue */
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.banner-img {
+    max-width: 400px;
+    margin-left: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+/* TYPOGRAPHY */
+.title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.italic { font-style: italic; }
+.white { color: white; }
+.xl-text { font-size: 60px; }
+
+/* FORMS (LOGIN/REGISTER) */
+.form-box {
+    background: white;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-icon {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.checkbox-group input { margin-right: 10px; }
+
+/* CATALOG */
+.catalog-area { padding: 30px 50px; }
+
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.search-input, .dropdown {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-input { flex-grow: 1; }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.img-product {
+    width: 100%;
+    height: 250px;
+    object-fit: contain; 
+    background: #f4f4f4;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.brand-name {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.product-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    color: #2c3e50; /* Berubah jadi Navy */
+}
+
+/* PRODUCT DETAIL */
+.detail-area {
+    display: flex;
+    gap: 40px;
+    background: white;
+    margin: 50px auto;
+    max-width: 1000px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+.detail-img-box {
+    flex: 1;
+    background: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-detail {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.detail-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stock-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.qty-input {
+    padding: 10px;
+    width: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: #888;
+    font-size: 14px;
+    margin-top: 50px;
+}

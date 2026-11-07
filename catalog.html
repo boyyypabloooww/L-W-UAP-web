@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog - L&W</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="nav">
+        <a href="index.html" class="logo">
+            <img src="https://placehold.co/100x40/ffffff/7a1d13?text=L%26W+Logo" alt="L&W Logo" class="logo-img">
+        </a>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="catalog.html">CATALOG</a>
+        </div>
+        <div class="auth">
+            <a href="login.html" class="btn btn-outline">LOGIN</a>
+            <a href="register.html" class="btn btn-solid">REGISTER</a>
+        </div>
+    </div>
+
+    <!-- CATALOG AREA -->
+    <div class="catalog-area">
+        <div class="filters">
+            <input type="text" placeholder="Search..." class="search-input">
+            <select class="dropdown">
+                <option>All Brands</option>
+                <option>Giorgio Armani</option>
+                <option>Yves Saint Laurent</option>
+                <option>Khadlaj</option>
+            </select>
+            <select class="dropdown">
+                <option>Newest First</option>
+                <option>Highest Price</option>
+                <option>Lowest Price</option>
+            </select>
+            <button class="btn btn-solid">Apply</button>
+        </div>
+        
+        <p style="margin-bottom: 20px; font-size: 14px; color: #888;">Results: 2 products</p>
+
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <a href="product-detail.html" style="text-decoration: none;">
+                <div class="card">
+                    <!-- Product Image -->
+                    <img src="https://placehold.co/300x300/eeeeee/7a1d13?text=Product+1" alt="Stronger With You" class="img img-product">
+                    
+                    <p class="brand-name">GIORGIO ARMANI</p>
+                    <h3 class="product-name">Stronger With You EDP 100 ml</h3>
+                    <p class="price">Rp 1.970.000</p>
+                </div>
+            </a>
+            
+            <!-- Product 2 -->
+            <a href="product-detail.html" style="text-decoration: none;">
+                <div class="card">
+                    <!-- Product Image -->
+                    <img src="https://placehold.co/300x300/eeeeee/7a1d13?text=Product+2" alt="MYSLF" class="img img-product">
+                    
+                    <p class="brand-name">YVES SAINT LAURENT</p>
+                    <h3 class="product-name">MYSLF Gift Set EDP</h3>
+                    <p class="price">Rp 2.450.000</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 L&W Luxury & Woods. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
